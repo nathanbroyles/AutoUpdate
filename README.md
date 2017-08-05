@@ -4,7 +4,7 @@ A simple Protocol Oriented Framework for writing easily-updatable, data-driven v
 ## Protocols
 I’m using a Protocol called `Unit` because a game I’m making involves war stuff.
 
-#### Model Protocol
+### Model Protocol
 	protocol Unit {
 	    var name: String { get set }
 	    var id: String { get }
@@ -23,7 +23,7 @@ Let’s create a simple `struct` to conform to our `Unit` protocol.
 	    var status: UnitStatus
 	}
 
-#### View Protocol
+### View Protocol
 Next is our view protocol for displayed a `Unit`. This will be shockingly called `UnitView`.
 	protocol UnitView {
 	    var unit: Unit? { get }
